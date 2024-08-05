@@ -104,7 +104,7 @@ install_theme() {
         break
         ;;
       3)
-        THEME_URL=$(echo -e "https://github.com/Afprian/C3/blob/main/C3.zip")
+        THEME_URL=$(echo -e "https://github.com/Afprian/C3/raw/main/C3.zip")
         break
         ;; 
       x)
