@@ -13,19 +13,20 @@ display_welcome() {
   echo -e "${BLUE}[+] =============================================== [+]${NC}"
   echo -e "${BLUE}[+]                                                 [+]${NC}"
   echo -e "${BLUE}[+]                AUTO INSTALLER THEMA             [+]${NC}"
-  echo -e "${BLUE}[+]                  © FOXSTORE OFFC                [+]${NC}"
+  echo -e "${BLUE}[+]                    © XELG STORE                   [+]${NC}"
   echo -e "${BLUE}[+]                                                 [+]${NC}"
   echo -e "${BLUE}[+] =============================================== [+]${NC}"
   echo -e ""
-  echo -e "script ini di buat untuk mempermudah penginstalasian thema pterodactyle,"
-  echo -e "dilarang keras untuk memperjual belikan."
+  echo -e "script ini di buat untuk mempermudah penginstalasian thema pterodactyl,"
+  echo -e "Mau Buy Sc No Enc + Bisa Dijual Lagi Pm Xelg Aja"
   echo -e ""
   echo -e "𝗪𝗛𝗔𝗧𝗦𝗔𝗣𝗣 :"
-  echo -e "0853-7227-7748"
+  echo -e "082257000208"
   echo -e "𝗬𝗢𝗨𝗧𝗨𝗕𝗘 :"
-  echo -e "@foxstore_id"
+  echo -e "@xelg_samp"
   echo -e "𝗖𝗥𝗘𝗗𝗜𝗧𝗦 :"
-  echo -e "@Chiwa"
+  echo -e "@XELG"
+  echo -e "Jangan lupa Join Dc XELG"
   sleep 4
   clear
 }
@@ -58,7 +59,7 @@ install_jq() {
 check_token() {
   echo -e "                                                       "
   echo -e "${BLUE}[+] =============================================== [+]${NC}"
-  echo -e "${BLUE}[+]               LICENSY FOXSTORE OFFC             [+]${NC}"
+  echo -e "${BLUE}[+]               LICENSE XELG STORE                  [+]${NC}"
   echo -e "${BLUE}[+] =============================================== [+]${NC}"
   echo -e "                                                       "
   TOKEN=$(jq -r '.token' token.json)
@@ -66,7 +67,7 @@ check_token() {
   echo -e "${YELLOW}MASUKAN AKSES TOKEN :${NC}"
   read -r USER_TOKEN
 
-  if [ "$USER_TOKEN" = "xelg" ]; then #taro token nya di sinii
+  if [ "$USER_TOKEN" = "xelgsht22" ]; then #taro token nya di sinii
     echo -e "${GREEN}AKSES BERHASIL${NC}}"
   else
     echo -e "${GREEN}AKSES GAGAL${NC}"
@@ -86,9 +87,12 @@ install_theme() {
     echo -e "PILIH THEME YANG INGIN DI INSTALL"
     echo "1. stellar"
     echo "2. billing"
-    echo "3. enigma"
+    echo "3. enigma premium"
     echo "x. kembali"
     echo -e "masukan pilihan (1/2/3/x) :"
+    echo -e""
+    echo -e "Made By XELG"
+    echo -e "Buy Sc No Enc + Bisa Dijual Lagi Pm Xelg Aja"
     read -r SELECT_THEME
     case "$SELECT_THEME" in
       1)
@@ -100,7 +104,7 @@ install_theme() {
         break
         ;;
       3)
-        THEME_URL=$(echo -e "\x68\x74\x74\x70\x73\x3A\x2F\x2F\x67\x69\x74\x68\x75\x62\x2E\x63\x6F\x6D\x2F\x44\x49\x54\x5A\x5A\x31\x31\x32\x2F\x66\x6F\x78\x78\x68\x6F\x73\x74\x74\x2F\x72\x61\x77\x2F\x6D\x61\x69\x6E\x2F\x43\x33\x2E\x7A\x69\x70")
+        THEME_URL=$(echo -e "https://github.com/Afprian/C3.git")
         break
         ;; 
       x)
@@ -121,7 +125,7 @@ if [ -e /root/pterodactyl ]; then
 if [ "$SELECT_THEME" -eq 1 ]; then
   echo -e "                                                       "
   echo -e "${BLUE}[+] =============================================== [+]${NC}"
-  echo -e "${BLUE}[+]                  INSTALLASI THEMA               [+]${NC}"
+  echo -e "${BLUE}[+]              INSTALLASI THEMA STELLAR              [+]${NC}"
   echo -e "${BLUE}[+] =============================================== [+]${NC}"
   echo -e "                                                                   "
   sudo cp -rfT /root/pterodactyl /var/www/pterodactyl
@@ -148,7 +152,7 @@ if [ "$SELECT_THEME" -eq 1 ]; then
 elif [ "$SELECT_THEME" -eq 2 ]; then
   echo -e "                                                       "
   echo -e "${BLUE}[+] =============================================== [+]${NC}"
-  echo -e "${BLUE}[+]                  INSTALLASI THEMA               [+]${NC}"
+  echo -e "${BLUE}[+]               INSTALLASI THEMA BILLING               [+]${NC}"
   echo -e "${BLUE}[+] =============================================== [+]${NC}"
   echo -e "                                                       "
   sudo cp -rfT /root/pterodactyl /var/www/pterodactyl
@@ -176,7 +180,7 @@ elif [ "$SELECT_THEME" -eq 2 ]; then
 elif [ "$SELECT_THEME" -eq 3 ]; then
   echo -e "                                                       "
   echo -e "${BLUE}[+] =============================================== [+]${NC}"
-  echo -e "${BLUE}[+]                  INSTALLASI THEMA               [+]${NC}"
+  echo -e "${BLUE}[+]               INSTALLASI THEMA ENIGMA              [+]${NC}"
   echo -e "${BLUE}[+] =============================================== [+]${NC}"
   echo -e "                                                                   "
 
@@ -185,7 +189,7 @@ elif [ "$SELECT_THEME" -eq 3 ]; then
     read LINK_WA
     echo -e "${YELLOW}Masukkan link group (https://.....) : ${NC}"
     read LINK_GROUP
-    echo -e "${YELLOW}Masukkan link channel (https://...) : ${NC}"
+    echo -e "${YELLOW}Masukkan link phpmyadmin (https://...) : ${NC}"
     read LINK_CHNL
 
     # Mengganti placeholder dengan nilai dari pengguna
@@ -253,6 +257,9 @@ while true; do
   echo "2. Uninstall theme"
   echo "x. Exit"
   echo -e "Masukkan pilihan (1/2/x):"
+  echo -e""
+  echo -e "Made By XELG"
+  echo -e "Buy Sc No Enc + Bisa Dijual Lagi Pm Xelg Aja"
   read -r MENU_CHOICE
   clear
 
