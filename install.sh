@@ -67,7 +67,7 @@ check_token() {
   echo -e "${YELLOW}MASUKAN AKSES TOKEN :${NC}"
   read -r USER_TOKEN
 
-  if [ "$USER_TOKEN" = "xelgsht22" ]; then #taro token nya di sinii
+  if [ "$USER_TOKEN" = "xelg22" ]; then #taro token nya di sinii
     echo -e "${GREEN}AKSES BERHASIL${NC}}"
   else
     echo -e "${GREEN}AKSES GAGAL${NC}"
@@ -100,7 +100,7 @@ install_theme() {
         break
         ;;
       2)
-        THEME_URL=$(echo -e "https://github.com/Afprian/pterodactylthemeautoinstaller/raw/main/C2.zip")
+        THEME_URL=$(echo -e "https://github.com/Afprian/theme/raw/main/C2.zip")
         break
         ;;
       3)
